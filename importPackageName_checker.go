@@ -16,7 +16,7 @@ func init() {
 	info.Before = `import lint "github.com/go-critic/go-critic/lint"`
 	info.After = `import "github.com/go-critic/go-critic/lint"`
 
-	lintpack.AddChecker(&info, func(ctx *lintpack.CheckerContext) lintpack.FileWalker {
+	collection.AddChecker(&info, func(ctx *lintpack.CheckerContext) lintpack.FileWalker {
 		return &importPackageNameChecker{ctx: ctx}
 	})
 }
