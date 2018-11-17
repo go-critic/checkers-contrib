@@ -1,5 +1,5 @@
 // Package checkers is a gocritic linter auxiliary checks submited by contributors.
-package contrib
+package checkers
 
 import (
 	"github.com/go-lintpack/lintpack"

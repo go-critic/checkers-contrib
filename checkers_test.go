@@ -1,4 +1,4 @@
-package contrib
+package checkers
 
 import (
 	"testing"
